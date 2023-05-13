@@ -1,13 +1,13 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch } from "react-router-dom";
 import AllMeetUpPage from "./pages/AllMeetUpPage";
 import NewMeetUpPage from "./pages/NewMeetUpPage";
 import FavouritePage from "./pages/FavouritePage";
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
     <div className="App">
-<MainNavigation/>
+      <Layout />
       <Switch>
         <Route path="/" exact>
           <AllMeetUpPage />
